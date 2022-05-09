@@ -1,0 +1,22 @@
+<body>
+    <script>
+        // function sequence() {
+        //     let seq = 0;
+        //     return function () {
+        //         seq++;
+        //         return seq;
+        //     };
+        // }
+        // const check = sequence();
+        let count = 0;
+
+        window.addEventListener('blur', () => {
+            // const count = check();
+            count += 1;
+            if (count > 5) {
+                alert('시험 종료!');
+                window.close();
+            }
+        });
+    </script>
+</body>
