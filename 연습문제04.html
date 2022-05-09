@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const map = ['가위', '바위', '보'];
+        const player = 0;
+        const com = parseInt(Math.random() * 3);
+        console.log(`player: ${map[player]}, com: ${map[com]}`);
+        let result = '';
+        if ((player + 1)%3 == com) {//player lose
+            result = 'com win';
+        }
+        else if (player + 1 == com) {
+            result = 'same';
+        }
+        else {
+            result = 'player win';
+        }
+
+
+        console.log(`결과: ${result}`);
+    </script>
+</body>
+
+</html>
