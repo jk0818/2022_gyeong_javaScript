@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //흉내내기
+        function action3(num1, num2){
+
+        }
+        function getCurrentPosition(func){
+            func(123, 456);
+        }
+
+
+
+
+        // 현재 위치 확인하기
+        function action2(position) {
+            let lat = position.coords.lat;
+            let lng = position.coords.lng;
+            console.log(lat+''+lng);
+        }
+        navigator.geolocation.getCurrentPosition(action2);
+
+
+        // <!-- callback ex -->
+        // <!-- 1. 일정 시간 뒤 명령문 실행 -->
+        // <!-- 1-명령문(함수) 1-일정시간(밀리초) -->
+        function action(){
+            alert('실행완료')
+        }
+        setTimeout(action, 3000);  //3초 후 실행
+
+        
+    </script>  
+</body>
+</html>
