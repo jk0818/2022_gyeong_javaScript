@@ -1,0 +1,15 @@
+<body>
+    <script>
+        // 비동기 작업 시작
+        const p = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve('complete');
+            }, 2000);
+        });
+
+        // 비동기 작업 후 처리(마무리)
+        p.then((res) => {
+            console.log(res)
+        });
+    </script>
+</body>
